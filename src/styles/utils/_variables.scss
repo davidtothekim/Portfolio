@@ -1,0 +1,27 @@
+// Font Sizes
+$fs-xs: 13px;
+$fs-md: 15px;
+$fs-l: 18px;
+$fs-heading: 32px;
+$fs-xl: 20px;
+$fs-xxl: 22px;
+
+// Colors
+
+// Fonts
+$font-white: rgb(204, 214, 246);
+$font-grey: #93979d;
+
+// Background
+$bg-header: rgb(2, 3, 26);
+$bg-main: #02052f;
+
+// Others
+$primary-accent: #ffb561;
+
+// Font Styles
+$fs-mono: "Space Mono", monospace;
+
+// Transition Styles
+$transition-all: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+$transition-all-slower: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);

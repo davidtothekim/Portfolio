@@ -1,0 +1,41 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.footer {
+	background-color: u.$bg-main;
+	padding-bottom: 15px;
+
+	&__social-media {
+		padding: 0 15px;
+		margin: 0 auto 10px;
+		width: 100%;
+	}
+
+	&__social-media-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 270px;
+	}
+
+	&__social-media-item {
+		padding: 10px;
+	}
+
+	&__social-media-icon {
+		height: 20px;
+		width: 20px;
+		filter: invert(75%) sepia(1%) saturate(2423%) hue-rotate(178deg) brightness(81%) contrast(88%);
+
+		&:hover {
+			filter: invert(82%) sepia(92%) saturate(3825%) hue-rotate(308deg) brightness(95%) contrast(111%);
+			transition: u.$transition-all;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		font-family: u.$fs-mono;
+	}
+}

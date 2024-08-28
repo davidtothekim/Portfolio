@@ -1,0 +1,13 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.cursor-dot {
+	height: 40px;
+	width: 40px;
+	background-color: u.$primary-accent;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 100;
+	opacity: 80%;
+	animation: ease;
+}

@@ -1,0 +1,11 @@
+@use './mixins' as u;
+
+.content-wrapper {
+	@include u.tablet {
+	}
+
+	@include u.desktop {
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}

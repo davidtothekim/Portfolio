@@ -1,0 +1,100 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.jobs-table {
+	@include u.tablet {
+		display: flex;
+		min-height: 340px;
+	}
+
+	&__header {
+		display: flex;
+		overflow-x: auto;
+		margin-bottom: 30px;
+
+		@include u.tablet {
+			flex-direction: column;
+		}
+	}
+
+	&__job-bttn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 10px 15px;
+		font-family: u.$fs-mono;
+		border: none;
+		background-color: transparent;
+		color: u.$font-grey;
+		font-size: u.$fs-xs;
+		border-bottom: 2px solid u.$font-grey;
+		cursor: pointer;
+
+		&:hover {
+			color: u.$primary-accent;
+			background-color: rgba(255, 181, 97, 0.5);
+			transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+			border-color: u.$primary-accent;
+		}
+
+		@include u.tablet {
+			border-bottom: none;
+			border-left: 2px solid u.$font-grey;
+		}
+
+		&--selected {
+			color: u.$primary-accent;
+			background-color: rgba(255, 181, 97, 0.5);
+			border-color: u.$primary-accent;
+		}
+	}
+
+	&__body {
+		margin: 0;
+
+		@include u.tablet {
+			margin-left: 20px;
+		}
+	}
+
+	&__role {
+		font-size: u.$fs-xl;
+		color: u.$font-white;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	&__company {
+		color: u.$primary-accent;
+	}
+
+	&__date {
+		font-size: u.$fs-xs;
+		font-family: u.$fs-mono;
+		margin: 2px 0 25px 0;
+	}
+
+	&__description {
+		position: relative;
+	}
+
+	&__description-list li:before {
+		position: absolute;
+		left: 0;
+		top: 2px;
+		content: "▹";
+		color: u.$primary-accent;
+		font-size: 14px;
+		line-height: 12px;
+	}
+
+	&__description-list-item {
+		width: 870px;
+		text-align: justify;
+		position: relative;
+		color: u.$font-grey;
+		font-size: u.$fs-md;
+		padding-left: 30px;
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,60 @@
+// Utils
+@use '../utils/' as u;
+
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+h1 {
+	font-size: 5rem;
+	margin: 0;
+}
+
+.font-mono {
+	font-family: "Space Mono", monospace;
+}
+
+// Headers
+.numbered-heading {
+	margin: 0 0 40px 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin: 10px 0 40px;
+	width: 100%;
+	font-size: clamp(20px, 5vw, u.$fs-heading);
+	white-space: nowrap;
+	color: u.$font-white;
+	font-weight: 500;
+}
+
+.numbered-heading::before {
+	position: relative;
+	bottom: 1px;
+	counter-increment: section 1;
+	content: "0" counter(section) ".";
+	margin-right: 5px;
+	margin-bottom: -3px;
+	color: u.$primary-accent;
+	font-weight: 400;
+	font-size: clamp(u.$fs-md, 3vw, u.$fs-xl);
+}
+
+.numbered-heading::after {
+	content: "";
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 1px;
+	background-color: u.$font-grey;
+	margin-left: 10px;
+
+	@include u.desktop {
+		width: 350px;
+	}
+}
+
+// Parapgrah
+p {
+	color: u.$font-grey;
+	font-size: 15px;
+}

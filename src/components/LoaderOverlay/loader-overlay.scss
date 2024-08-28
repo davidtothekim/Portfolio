@@ -1,0 +1,17 @@
+// Imports
+@use '../../styles/utils/' as u;
+
+.loader-overlay {
+	display: flex;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background-color: u.$bg-main;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+
+	&--hidden {
+		display: none;
+	}
+}
