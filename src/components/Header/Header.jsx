@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 // Assets
 import profileIcon from '../../assets/profile-icon.svg';
-import resumePdf from '../../assets/resume.pdf';
+import resumePdf from '../../../public/assets/resume.pdf';
 
 function Header() {
 	// States
