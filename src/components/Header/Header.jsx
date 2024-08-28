@@ -5,7 +5,7 @@ import './header.scss';
 import { useState, useEffect } from 'react';
 
 // Assets
-import profileIcon from '../../assets/profile-icon.svg';
+import profileIcon from '../../../public/assets/profile-icon.svg';
 import resumePdf from '../../../public/assets/resume.pdf';
 
 function Header() {
