@@ -2,10 +2,15 @@
 import './footer.scss';
 
 // Assets
-import instagramIcon from '../../../public/assets/instagram-icon.svg';
-import emailIcon from '../../../public/assets/email-icon.svg';
-import linkedinIcon from '../../../public/assets/linkedin-icon.svg';
-import githubIcon from '../../../public/assets/github-icon.svg';
+// import instagramIcon from '../../../public/assets/instagram-icon.svg';
+// import emailIcon from '../../../public/assets/email-icon.svg';
+// import linkedinIcon from '../../../public/assets/linkedin-icon.svg';
+// import githubIcon from '../../../public/assets/github-icon.svg';
+
+import instagramIcon from '/assets/instagram-icon.svg';
+import emailIcon from '/assets/email-icon.svg';
+import linkedinIcon from '/assets/linkedin-icon.svg';
+import githubIcon from '/assets/github-icon.svg';
 
 function Footer() {
 	return (
