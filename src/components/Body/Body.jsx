@@ -20,7 +20,7 @@ function Body() {
 			gitHubUrl: 'https://github.com/davidtothekim/WebTracer',
 			demoUrl:
 				'https://chromewebstore.google.com/detail/webtracer-a-productivity/cbcjdipdfpjomdjfbhimgbkebeekbepm',
-			image: '/public/assets/WebTracer-project-image.png',
+			image: '/assets/WebTracer-project-image.png',
 			position: 'right'
 		},
 		{
@@ -39,7 +39,7 @@ function Body() {
 			],
 			gitHubUrl: 'https://github.com/davidtothekim/set-app',
 			demoUrl: ' http://3.17.28.169/',
-			image: '/public/assets/set-app-project-image.png',
+			image: '/assets/set-app-project-image.png',
 			position: 'left'
 		},
 		{
