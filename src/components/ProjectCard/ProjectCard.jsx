@@ -2,8 +2,8 @@
 import './project-card.scss';
 
 //Assets
-import githubIcon from '../../assets/github-icon.svg';
-import externalLinkIcon from '../../assets/external-link-icon.svg';
+import githubIcon from '../../../public/assets/github-icon.svg';
+import externalLinkIcon from '../../../public/assets/external-link-icon.svg';
 
 function ProjectCard({ details }) {
 	return (
