@@ -50,7 +50,7 @@ function Body() {
 			technologies: [ 'React Native', 'PokéAPI' ],
 			gitHubUrl: '',
 			demoUrl: '',
-			image: '',
+			image: '/assets/pokedoro-project-image.png',
 			position: 'right'
 		}
 	];
